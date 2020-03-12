@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Survey</title>
+    </head>
+    <body>
+        <form action="form.php" method="POST">
+            <i><b>Personal survey</b></i>
+            <br></br>
+            Name: <input type="text" size="16" maxlength="20" name="Name">
+            <br></br>
+            Class: <input type="text" size="16" maxlength="20" name="Class">
+            <dl><dt>University</dt>
+                <dd><input type="radio" name="Uni" value="HUST" checked>HUST</dd>
+                <dd><input type="radio" name="Uni" value="NUCE">NUCE</dd>
+                <dd><input type="radio" name="Uni" value="NEU">NEU</dd>
+                <dt>Hobbies</dt>
+                <dd><input type="checkbox" name="books" value="Yes" checked>Reading books</dd>
+                <dd><input type="checkbox" name="music" value="Yes">Listening to music</dd>
+                <dd><input type="checkbox" name="draw" value="Yes">Drawing</dd>
+                <dd><input type="checkbox" name="dance" value="Yes">Dancing/Singing</dd>
+                <dd><input type="checkbox" name="games" value="Yes">Playing games</dd>
+                <dd><input type="checkbox" name="sports" value="Yes">Playing sports</dd>
+                <dd><input type="checkbox" name="volunteer" value="Yes">Volunteering</dd>         
+            </dl>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
