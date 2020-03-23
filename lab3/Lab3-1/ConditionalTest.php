@@ -38,17 +38,37 @@
             print ("Illegal grade less than 0. Final grade = $final");
         }
 //        if ($final > 89) {
-//            printf ("Your final grade is %.lf. You got an A. Congratulations!" , $final);
+//            printf("Your final grade is %.lf. You got an A. Congratulations!", $final);
+//            $rate = "A";
 //        } elseif ($final > 79) {
-//            printf ("Your final is %.lf. You got a B.");
+//            printf("Your final is %.lf. You got a B.", $final);
+//            $rate = "B";
 //        } elseif ($final > 69) {
-//            print ("Your final is %.lf. You got a C.");
+//            printf("Your final is %.lf. You got a C.", $final);
+//            $rate = "C";
 //        } elseif ($final > 59) {
-//            print ("Your final is %.lf. You got a D.");
+//            printf("Your final is %.lf. You got a D.", $final);
+//            $rate = "D";
 //        } elseif ($final > 0) {
-//            print ("Your final is %.lf. You got a F.");
+//            printf("Your final is %.lf. You got a F.", $final);
+//            $rate = "F";
 //        } else {
-//            print ("Illegal grade less than 0. Final grade = $final");
+//            printf("Illegal grade less than 0. Final grade = %.lf", $final);
+//            $rate = "Illegal";
+//        }
+//        print ("<br></br>");
+//        switch ($rate) {
+//            case "A": print ("Excellent!");
+//                break;
+//            case "B": print ("Good!");
+//                break;
+//            case "C": print ("Notbad!");
+//                break;
+//            case "D": print ("Normal!");
+//                break;
+//            case "F": print ("You have to try again!");
+//                break;
+//            default: print ("Illegal grade!");
 //        }
         ?>
     </body>
