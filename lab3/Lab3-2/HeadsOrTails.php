@@ -4,7 +4,7 @@
         <title>Coin Flip</title>
     </head>
     <body>
-        <font size="4" color="blue">Please pick heads ỏ tails</font>
+        <font size="4" color="blue">Please pick heads or tails</font>
         <form action="GotFlip.php" method="POST">
             <?php
             print ("<input type=\"radio\" name=\"pick\" value=0> Heads");
