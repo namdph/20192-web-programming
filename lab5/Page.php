@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Page</title>
     </head>
     <body>
         <?php
@@ -19,20 +13,41 @@ and open the template in the editor.
             private int $year;
             private string $copyright;
 
+            public function Page($title, $year, $copyright) {
+                $this->page = '';
+                $this->title = $title;
+                $this->year = $year;
+                $this->copyright = $copyright;
+                $this->addHeader();
+            }
+
             private function addHeader() {
-                return $this->page;
+                $this->page .= <<<HEAD
+                    <html>
+                        <head><title>$this->title</title></head>
+                        <body>
+                            <h1 align="center">$this->title</h1>
+                    HEAD;
             }
 
             public function addContent($content) {
-                $this->content = $content;
+                $this->page .= $content;
             }
 
             private function addFooter() {
-                return $this->year;
+                $this->page .= <<<FOOT
+                    <div align="center">&copy; $this->year $this->copyright</div>
+                    </body>
+                    </html>
+                    FOOT;
             }
 
             public function get() {
-                return $this;
+                $pageWithoutFooter = $this->page;
+                $this->addFooter();
+                $page = $this->page;
+                $this->page = $pageWithoutFooter;
+                return $page;
             }
 
         }
