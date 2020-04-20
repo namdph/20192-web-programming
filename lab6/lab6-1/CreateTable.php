@@ -5,8 +5,8 @@
     <body>
         <?php
         $server = 'localhost';
-        $user = 'phppgm';
-        $pass = 'mypasswd';
+        $user = 'username';
+        $pass = 'password';
         $mydb = 'mydatabase';
         $table_name = 'Products';
         $connect = mysql_connect($server, $user, $pass);
