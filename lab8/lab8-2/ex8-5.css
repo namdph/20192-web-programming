@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#header {
+    background: #DE2E1F;
+    width: 100%;
+}
+#toprightcol {
+    background: #DED51F;
+    float: right;
+    width: 20%;
+    height: 500px;              
+}
+
+#content {
+    background: #fff;
+    float: left;
+    width: 80%;
+    height: 500px;
+}
+#footer {
+    background: #5D1FDE;
+    clear: both;
+    width: 100%;
+}
