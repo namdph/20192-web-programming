@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-$file = "ex3_step5.xml";
+$file = "ex3-5.xml";
 
 $xml = simplexml_load_file($file) or die("Unable to load XML file!");
 
